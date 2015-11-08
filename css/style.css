@@ -1,0 +1,137 @@
+body {
+  background-color: white;
+  font-family: 'Carrois Gothic SC', sans-serif;
+  margin: 0 auto;
+  padding: 0 auto;
+  color: #424242;
+}
+input {
+  margin-top: 30px;
+  height: 50px;
+  width: 200px;
+  border: none;
+  font-size: 1.3em;
+  color: black;
+  background-color:white;
+  text-align: center;
+  font-family: 'Carrois Gothic SC', sans-serif;
+  border-bottom:solid black 4px;
+}
+input:hover {
+  margin-top: 30px;
+  height: 50px;
+  width: 200px;
+  border: none;
+  font-size: 1.5em;
+  color: black;
+  background-color:white;
+  text-align: center;
+  font-family: 'Carrois Gothic SC', sans-serif;
+  border-bottom:solid black 4px;
+}
+button {
+  height: 40px;
+  width: 200px;
+  border: none;
+  background-color: white;
+  font-size: 1em;
+  font-family: 'Carrois Gothic SC', sans-serif;
+}
+button:hover{
+  height: 40px;
+  width: 200px;
+  border: 1px black;
+  font-size: 1.3em;
+  font-family: 'Carrois Gothic SC', sans-serif;
+}
+img{
+  height:50px;
+  position: absolute;
+  margin-left: 20px;
+  top: 20px;
+}
+a {
+  font-size: 1.8em;
+  text-decoration: none;
+  color: black;
+  font-family: 'Carrois Gothic SC', sans-serif;
+    line-height: 1em;
+    text-align: center;
+}
+
+a:hover {
+  font-size: 1.8em;
+  color: blue;
+  font-family: 'Carrois Gothic SC', sans-serif;
+}
+
+h3 {
+margin: 0 auto;
+}
+ul {
+  font-family: 'Domine', serif;
+  margin: 0 auto;
+  width: 100%;
+}
+li {
+  width: 33%;
+  margin: 0 auto;
+  font-size: 1.2em;
+  line-height: 1.2em;
+}
+.nytimes-container {
+  margin: 0 auto;
+  background-color:white;
+  margin-top: 200px;
+}
+.article-list {
+  margin: 0;
+  padding: 0;
+}
+.article {
+  list-style-type: none;
+  padding:10px;
+}
+.article:first-child {
+    border-top:none;
+}
+.form-container {
+width: 200px;
+margin: 0 auto;
+}
+
+.end {
+  width:33%;
+  color:#e3e3e3;
+
+}
+
+/*       rando                */
+
+.header {
+    position: fixed;
+    top: 0px;
+    margin: 0 auto;
+    height: 150px;
+    width: 100%;
+    background-color: white;
+}
+.author {
+  font-size: .8em;
+  color: #5a5a5a;
+}
+.desk {
+  font-size: .8em;
+  line-height: .5em;
+  color:#ccc;
+}
+.section{
+  font-size: .8em;
+  line-height: .5em;
+  color:#ccc;
+}
+.extras {
+  font-size: .6em;
+  line-height: .5em;
+  color:#ccc;
+}
