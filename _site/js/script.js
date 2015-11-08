@@ -1,36 +1,29 @@
 function loadData() {
-
     var $body = $('body');
-
     var $nytHeaderElem = $('#nytimes-header');
     var $nytElem = $('#nytimes-articles');
-    var $greeting = $('#greeting');
     $nytElem.text("");
     var query=$('#city').val();
-    function theApi(){
+    function getInfo(){
       var theArticleUrl="http://api.nytimes.com/svc/search/v2/articlesearch.json?q="+
       query+"&api-key=43efaaebb6ed9f2f4a47c0f7994a7e45:7:73398977";
-      console.log("before json");
-      /*
-      $.getJSON(theArticleUrl,function(data){
-              console.log("inside json");
-              console.log(data);
-          });
-      */
-      console.log("after json");
       $.ajax({
         type:'GET',
         url:theArticleUrl,
         success:function(data){
-          console.log("ajax success entered");
+          console.log("Info Retrieved!");
           console.log(data);
           $('#nytimes-header').append(" About "+query)
           for(var i=0;i<data.response.docs.length;i++){
+
+
+
+
                   $('#nytimes-articles').append(
                       "<li class='article'><h1><a href=" + data.response.docs[i].web_url+
                       "target=_blank></h1><p>" + data.response.docs[i].headline.main + "</a></p>" +
                       "<p class='snippet'>" + data.response.docs[i].snippet + "</p>" +
-                      "<p class='author'> words by:<em> "  + data.response.docs[i].byline.original + "</em></p>" +
+                      // "<p class='author'> words by:<em> "  + data.response.docs[i].byline.original + "</em></p>" +
                       "<p class='section'>Section: " +  data.response.docs[i].section_name + "</p>" +
                       "<p class='extras'> News Desk: " +  data.response.docs[i].news_desk +
                       "<p class='extras'>Publication Date: " +  data.response.docs[i].pub_date + "</p>" +
@@ -40,9 +33,7 @@ function loadData() {
                   }
                 });
               }
-
-        theApi();
-
+        getInfo();
     return false;
 };
 
