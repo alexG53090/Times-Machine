@@ -1,9 +1,9 @@
 # Times-Machine
-Search The New York Times for any article
+Search The New York Times for any article, by keyword.
 
 ####Hop in the Times Machine!
 ```
-1. Fork and Download this Repo
+1. Fork and Clone this Repository
 2. Open up the directory
 3. Double-click the index.html file
 ```
@@ -17,3 +17,5 @@ Search The New York Times for any article
 (http://thedope.agency/mini_test/test.html)
 
 > MIT Licesnce
+
+(no API key required)
